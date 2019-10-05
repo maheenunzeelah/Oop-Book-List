@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style>
+     .success,.error{
+           color: white;
+           padding:5px;
+           margin:5px 0px 15px 0px;
+     }
+     .success{
+         background: green;
+     }
+     .error{
+         background: red;
+     }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>ADD BOOK</h3>
+        <form id='book-form'>
+          <div>  
+           <label for="title">Title</label>
+           <input type="text" id="title">
+          </div>
+          <div>
+             <label for="author">Author</label>
+             <input type="text" id="author"> 
+          </div>
+          <div>
+              <label for="isbn">ISBN</label>
+              <input type="text"  id="isbn">
+          </div>
+          <input type="submit" value="Submit" id='book-sub' class="btn btn-md ">
+        </form>
+        <table>
+            <thead>
+                <tr>
+                   <th>Title</th>
+                   <th>Author</th>
+                   <th>ISBN</th>
+                   <th></th> 
+                </tr>
+            </thead>
+            <tbody id="book-list"></tbody>
+        </table>
+    </div>
+    <script src="es6classes.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
